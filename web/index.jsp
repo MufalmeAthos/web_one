@@ -42,64 +42,64 @@
 <% 
 
  
-            Connection con;    
-            String msg = "";
-            String color = "";
-       if(request.getMethod().compareToIgnoreCase("post")==0)
-   {
-   try
-   {
-      String username_user = request.getParameter("username");
-      String mypassword_user = request.getParameter("password");
-      
-      
+  Connection con;    
+  String msg = "";
+  String color = "";
+  if(request.getMethod().compareToIgnoreCase("post")==0)
+  {
+    try
+    {
+       String username_user = request.getParameter("username");
+       String mypassword_user = request.getParameter("password");
 
-                PreparedStatement pst;
-      ResultSet rs;
-      //Class.forName("com.mysql.jdbc.Driver");//mysql
-      //con = DriverManager.getConnection("jdbc:mysql://localhost/meru","root","");//mysql
-                
-      Class.forName("org.postgresql.Driver");
-      con = DriverManager.getConnection("jdbc:postgresql://localhost/meru","postgres","root");
-//      String query = "SELECT * FROM user WHERE  username = ? AND  email = ? ";
-//     
-//      PreparedStatement pst = con.prepareStatement(query);
-//     
-//      pst.setString(1, mypassword_user);
-//      pst.setString(2, username_user);
-//     
-//      pst.executeQuery(); 
 
-   String query = "Select * from test_user WHERE  username = ? AND  email = ? ";
-    pst = con.prepareStatement(query);
 
-      pst.setString(1, mypassword_user);
-      pst.setString(2, username_user);
-     
-rs = pst.executeQuery();
-while(rs.next()){
-if(rs.getString("email").isEmpty()){
-    %>
+       PreparedStatement pst;
+       ResultSet rs;
+       //Class.forName("com.mysql.jdbc.Driver");//mysql
+       //con = DriverManager.getConnection("jdbc:mysql://localhost/meru","root","");//mysql
+
+       Class.forName("org.postgresql.Driver");
+       con = DriverManager.getConnection("jdbc:postgresql://localhost/meru","postgres","root");
+ //      String query = "SELECT * FROM user WHERE  username = ? AND  email = ? ";
+ //     
+ //      PreparedStatement pst = con.prepareStatement(query);
+ //     
+ //      pst.setString(1, mypassword_user);
+ //      pst.setString(2, username_user);
+ //     
+ //      pst.executeQuery(); 
+
+       String query = "Select * from test_user WHERE  username = ? AND  email = ? ";
+       pst = con.prepareStatement(query);
+
+       pst.setString(1, mypassword_user);
+       pst.setString(2, username_user);
+
+        rs = pst.executeQuery();
+        while(rs.next()){
+            if(rs.getString("email").isEmpty()){
+%>
     <div class='alert alert-danger center' style='width: 90%; margin: auto;'><p>Error Occurred!</p></div><br><br>
-    <%}else{
+<%
+            }else{
 %>
     <script>
      window.location.replace("users.jsp");  
    </script>
-
- <% }
-}
+<%
+            }
+        }
      
-   }catch(Exception ex){
-   ex.printStackTrace();
-   color = "red";
-   msg = "Error Occured";
-    %>
+    }catch(Exception ex){
+        ex.printStackTrace();
+        color = "red";
+        msg = "Error Occured";
+%>
     <div class='alert alert-danger center' style='width: 90%; margin: auto;'><p>Error Occurred!</p></div><br><br>
-    <%
-   }
-   }
-
+<%
+    }
+ }
 %>
         <div class="unix-login">
             <div class="container-fluid">
