@@ -127,7 +127,7 @@
                                     <button name="submit" type="submit" class="btn btn-danger btn-flat m-b-30 m-t-30">Sign In</button>
                                     
                                 </form>
-								<br/><p>Copyright &copy;2020 Athanase Bahizire. All Rigths Reserved </p>
+				<br/><p>Copyright &copy;2020 Athanase Bahizire. All Rigths Reserved </p>
                             </div>
                         </div>
                     </div>
