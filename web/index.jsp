@@ -10,7 +10,7 @@
 <%@page import="java.util.ArrayList" %>
 <%@page import="java.util.ArrayList" %>
 <%@page import="java.lang.Math.*" %>
-<%@page import="java.util.*"%>
+<%@page import="java.util.*" %>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -43,8 +43,8 @@
 
  
   Connection con;    
-  String msg = "";
-  String color = "";
+  //String msg = "";
+  //String color = "";
   if(request.getMethod().compareToIgnoreCase("post")==0)
   {
     try
