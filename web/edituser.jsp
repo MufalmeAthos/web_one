@@ -57,7 +57,7 @@
  <% 
      
    }catch(Exception ex){
-   ex.printStackTrace();
+        ex.printStackTrace();
     %>
     <div class='alert alert-danger center' style='width: 90%; margin: auto;'><p>Error Occurred!</p></div><br><br>
     <%
@@ -71,17 +71,17 @@
 								<form class="form-horizontal" method="post" action="" >
 <%
                 PreparedStatement pst;
-    ResultSet rs;
-      Class.forName("org.postgresql.Driver");
-      con = DriverManager.getConnection("jdbc:postgresql://localhost/meru","postgres","root");
-    String index_user = request.getParameter("id");
-    String query = "Select * from test_user WHERE  index_user = ?  ";
-    pst = con.prepareStatement(query);
+        ResultSet rs;
+        Class.forName("org.postgresql.Driver");
+        con = DriverManager.getConnection("jdbc:postgresql://localhost/meru","postgres","root");
+        String index_user = request.getParameter("id");
+        String query = "Select * from test_user WHERE  index_user = ?  ";
+        pst = con.prepareStatement(query);
 
-      pst.setString(1, index_user);
+        pst.setString(1, index_user);
      
-rs = pst.executeQuery();
-while(rs.next()){
+        rs = pst.executeQuery();
+        while(rs.next()){
     
 %>
 									<div class="form-group">
