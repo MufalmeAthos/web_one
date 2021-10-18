@@ -1,8 +1,8 @@
-
+<!--
 <!DOCTYPE HTML>
 <html>
 <head>
-<title> Edit User | MERRUshop</title>
+<title>  Users | MERRUshop</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="" />
@@ -12,38 +12,38 @@
 
 <link rel="stylesheet" href="js/cleditor/jquery.cleditor.css" />
 
-<!-- Favicon and Touch Icons -->
+ Favicon and Touch Icons 
 <link href="../images/favicon.png" rel="shortcut icon" type="image/png">
 
-<!-- Bootstrap Core CSS -->
+ Bootstrap Core CSS 
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <link href="css/mzeestyle.css" rel='stylesheet' type='text/css' />
 
-<!-- Custom CSS -->
+ Custom CSS 
 <link href="css/style.css" rel='stylesheet' type='text/css' />
 
-<!-- font-awesome icons CSS -->
+ font-awesome icons CSS 
 <link href="css/font-awesome.css" rel="stylesheet"> 
-<!-- //font-awesome icons CSS-->
+ //font-awesome icons CSS
 
-<!-- side nav css file -->
+ side nav css file 
 <link href='css/SidebarNav.min.css' media='all' rel='stylesheet' type='text/css'/>
-<!-- //side nav css file -->
+ //side nav css file 
  
- <!-- js-->
+  js
 <script src="js/jquery-1.11.1.min.js"></script>
 <script src="js/modernizr.custom.js"></script>
 
 
-<!-- chart -->
+ chart 
 <script src="js/Chart.js"></script>
-<!-- //chart -->
+ //chart 
 
-<!-- Metis Menu -->
+ Metis Menu 
 <script src="js/metisMenu.min.js"></script>
 <script src="js/custom.js"></script>
 <link href="css/custom.css" rel="stylesheet">
-<!--//Metis Menu -->
+//Metis Menu 
 <style>
 #chartdiv {
   width: 100%;
@@ -54,11 +54,11 @@
 </head> 
 <body class="cbp-spmenu-push">
 	<div class="main-content">
-	<!--
+	
 URL:            http://brainsdevelopers.tech 
--->
+
 <div class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
-		<!--left-fixed -navigation-->
+		left-fixed -navigation
 		<aside class="sidebar-left">
       <nav class="navbar navbar-inverse">
           <div class="navbar-header">
@@ -130,19 +130,19 @@ URL:            http://brainsdevelopers.tech
               <li><a href="users.html"><i class="fa fa-angle-right text-red"></i> <span>Users</span></a></li>
             </ul>
           </div>
-          <!-- /.navbar-collapse -->
+           /.navbar-collapse 
       </nav>
     </aside>
 	</div>
-		<!--left-fixed -navigation-->
+		left-fixed -navigation
 		
-		<!-- header-starts -->
+		 header-starts 
 		<div class="sticky-header header-section ">
 			<div class="header-left">
-				<!--toggle button start-->
+				toggle button start
 				<button id="showLeftPush"><i class="fa fa-bars"></i></button>
-				<!--toggle button end-->
-				<div class="profile_details_left"><!--notifications of menu start -->
+				toggle button end
+				<div class="profile_details_left">notifications of menu start 
 					<ul class="nofitications-dropdown">
 						<li class="dropdown head-dpdn">
 							<a href="inbox.html" class="dropdown-toggle" ><i class="fa fa-envelope"></i>
@@ -154,7 +154,7 @@ URL:            http://brainsdevelopers.tech
 						</li>
 					</ul>
 				</div>
-				<!--notification menu end -->
+				notification menu end 
 			</div>
 			<div class="header-right">
 				<div class="profile_details">	
@@ -184,7 +184,7 @@ URL:            http://brainsdevelopers.tech
 			</div>
 			<div class="clearfix"> </div>	
 		</div>
-		<!-- //header-ends -->		<!-- main content start-->
+		 //header-ends 		 main content start
 	<div id="page-wrapper">
 		<div class="main-page">
 			<div class="forms">
@@ -270,16 +270,16 @@ URL:            http://brainsdevelopers.tech
 					</div>
 		</div>
 	</div>
-  	<!--footer-->
+  	footer
 	<div class="footer">
 	   <p>Copyright &copy;2020 Athanase Bahizire. All Rights Reserved  <a href="http://brainsdevelopers.tech " target="_blank">@Brainsdevelopers</a></p>		
 	</div>
-    <!--//footer-->
-<!--
+    //footer
+
 Project:       PC Sacre Coeur
 Author:         Athanase Bahizire
 URL:            http://brainsdevelopers.tech 
--->	</div>
+	</div>
 
 
  <script src="js/cleditor/jquery.cleditor.min.js"></script>
@@ -290,7 +290,7 @@ URL:            http://brainsdevelopers.tech
     </script>
 
 	
-	<!-- Classie --><!-- for toggle left push menu script -->
+	 Classie  for toggle left push menu script 
 		<script src="js/classie.js"></script>
 		<script>
 			var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
@@ -311,28 +311,28 @@ URL:            http://brainsdevelopers.tech
 				}
 			}
 		</script>
-	<!-- //Classie --><!-- //for toggle left push menu script -->
+	 //Classie  //for toggle left push menu script 
 		
-	<!--scrolling js-->
+	scrolling js
 	<script src="js/scripts.js"></script>
-	<!--//scrolling js-->
+	//scrolling js
 	
-	<!-- side nav js -->
+	 side nav js 
 	<script src='js/SidebarNav.min.js' type='text/javascript'></script>
 	<script>
       $('.sidebar-menu').SidebarNav()
     </script>
-	<!-- //side nav js -->
+	 //side nav js 
 	
 	
-	<!-- Bootstrap Core JavaScript -->
+	 Bootstrap Core JavaScript 
    <script src="js/bootstrap.js"> </script>
-	<!-- //Bootstrap Core JavaScript -->
+	 //Bootstrap Core JavaScript 
 	
 </body>
 </html>
 
-<!--
+
 Author:         Athanase Bahizire
 URL:            http://brainsdevelopers.tech 
 -->
