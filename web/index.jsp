@@ -10,7 +10,7 @@
 <%@page import="java.util.ArrayList" %>
 <%@page import="java.util.ArrayList" %>
 <%@page import="java.lang.Math.*" %>
-<%@page import="java.util.*" %>
+<%@page import="java.util.*"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -43,8 +43,8 @@
 
  
   Connection con;    
-  //String msg = "";
-  //String color = "";
+  String msg = "";
+  String color = "";
   if(request.getMethod().compareToIgnoreCase("post")==0)
   {
     try
@@ -93,8 +93,8 @@
      
     }catch(Exception ex){
         ex.printStackTrace();
-        //color = "red";
-       // msg = "Error Occured";
+        color = "red";
+        msg = "Error Occured";
 %>
     <div class='alert alert-danger center' style='width: 90%; margin: auto;'><p>Error Occurred!</p></div><br><br>
 <%
@@ -127,7 +127,7 @@
                                     <button name="submit" type="submit" class="btn btn-danger btn-flat m-b-30 m-t-30">Sign In</button>
                                     
                                 </form>
-				<br/><p>Copyright &copy;2020 Athanase Bahizire. All Rigths Reserved </p>
+								<br/><p>Copyright &copy;2020 Athanase Bahizire. All Rigths Reserved </p>
                             </div>
                         </div>
                     </div>
