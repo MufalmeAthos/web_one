@@ -53,8 +53,10 @@
 </head> 
 <body class="cbp-spmenu-push">
 	<div class="main-content">
-	<!--
-URL:            http://brainsdevelopers.tech 
+<!--
+ Author:         Athola Bahizire
+ Email:          atholabahizire@gmail.com
+ URL:            http://brainsdevelopers.tech 
 -->
 <div class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
 		<!--left-fixed -navigation-->
