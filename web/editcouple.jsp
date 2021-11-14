@@ -19,9 +19,8 @@
 			<div class="forms">
 				<div class="row">
 <% 
-    
- /* --- The new couple page --- */
-             
+           
+ /* --- The edit couple page --- */  
             Connection con;    
     
        if(request.getMethod().compareToIgnoreCase("post")==0)
@@ -34,51 +33,57 @@
       String phone_user = request.getParameter("phone");
       String username_user = request.getParameter("username");
       String type_user = request.getParameter("type");
-      String password_user = request.getParameter("password");
-      String mypassword_user = request.getParameter("mypassword");
-      String password_user_show = request.getParameter("password");
-      String mydate= (new java.util.Date()).toLocaleString();
-      int index =  (int) (Math.random() * 8888888);
-      String index_user = Integer.toString(index);
-      
+      String index_user = request.getParameter("index_user");
       Class.forName("org.postgresql.Driver");
       con = DriverManager.getConnection("jdbc:postgresql://localhost/meru","postgres","root");
-      String query = "INSERT INTO rest_couple (index_user, name, username, password, image, date, email, phone) VALUES (?, ?, ?, ?,'', NOW(), ?, ?)";
+      String query = "UPDATE test_user SET  name = ?, username = ?,  email= ?, phone = ? WHERE index_user =?";
      
       PreparedStatement pst = con.prepareStatement(query);
      
-      pst.setString(1, index_user);
-      pst.setString(2, name_user);
-      pst.setString(3, username_user);
-      pst.setString(4, mypassword_user);
-      pst.setString(5, email_user);
-      pst.setString(6, phone_user);
+      pst.setString(1, name_user);
+      pst.setString(2, username_user);
+      pst.setString(3, email_user);
+      pst.setString(4, phone_user);
+      pst.setString(5, index_user);
       pst.executeUpdate();
      
 
-
-%>
-     <div class="alert alert-info text-center col-md-12" ><i class="fa fa-check"></i>Registration Successful!<br/> 
+ 
+     %>
+     <div class="alert alert-info text-center col-md-12" ><i class="fa fa-check"></i> User Updated !<br/> 
          <span style="text-align:center;"><i class="fa fa-user"></i> 
-             UserName : '<%=username_user%>' - <i class="fa fa-lock"></i> Mot de passe : <em>'<%=password_user_show%>' </em></span> 
+             UserName : '<%=username_user%>' - <i class="fa fa-lock"></i> Name : <em>'<%=name_user%>' </em></span> 
      </div><div class="clear"></div><br>
     <meta http-equiv='refresh' content='2; url = users.jsp' />
  <% 
      
    }catch(Exception ex){
-   ex.printStackTrace();
-      
-%>
+        ex.printStackTrace();
+    %>
     <div class='alert alert-danger center' style='width: 90%; margin: auto;'><p>Error Occurred!</p></div><br><br>
     <%
    }
   }
 
 %>
-						<h3 class="title1">New Couple :</h3>
+						<h3 class="title1">Edit Couple :</h3>
 						<div class="form-three widget-shadow">
 							<div class=" panel-body-inputin">
-								<form class="form-horizontal" method="post" action="" >
+						<form class="form-horizontal" method="post" action="" ><%
+//                PreparedStatement pst;
+//        ResultSet rs;
+//        Class.forName("org.postgresql.Driver");
+//        con = DriverManager.getConnection("jdbc:postgresql://localhost/meru","postgres","root");
+//        String index_user = request.getParameter("id");
+//        String query = "Select * from test_user WHERE  index_user = ?  ";
+//        pst = con.prepareStatement(query);
+//
+//        pst.setString(1, index_user);
+//     
+//        rs = pst.executeQuery();
+//        while(rs.next()){
+//    
+%>
 									<div class="form-group">
 										<label class="col-md-2 control-label">Husband Name</label>
 										<div class="col-md-8">
