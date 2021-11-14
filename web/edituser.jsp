@@ -19,7 +19,8 @@
 			<div class="forms">
 				<div class="row">
 <% 
-             
+           
+ /* --- The edit user page --- */  
             Connection con;    
     
        if(request.getMethod().compareToIgnoreCase("post")==0)

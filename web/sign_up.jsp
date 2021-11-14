@@ -41,7 +41,8 @@
     <div id="main-wrapper">
 <% 
     
-             
+           
+ /* --- The Sign up page --- */  
             Connection con;    
     
        if(request.getMethod().compareToIgnoreCase("post")==0)

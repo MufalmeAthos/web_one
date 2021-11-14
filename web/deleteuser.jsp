@@ -3,6 +3,7 @@
 <%@page import="java.sql.Connection"%>
 <%
             
+ /* --- The delete user page --- */
         Connection con;    
         String index_user = request.getParameter("id");
         Class.forName("org.postgresql.Driver");

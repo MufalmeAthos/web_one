@@ -20,6 +20,7 @@
 				<div class="row">
 <% 
     
+ /* --- The new user page --- */
              
             Connection con;    
     

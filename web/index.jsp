@@ -41,7 +41,7 @@
     <div id="main-wrapper">
 <% 
 
- 
+ /* --- The index page --- */
   Connection con;    
   String msg = "";
   String color = "";

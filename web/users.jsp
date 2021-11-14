@@ -42,10 +42,10 @@
       Class.forName("org.postgresql.Driver");
       con = DriverManager.getConnection("jdbc:postgresql://localhost/meru","postgres","root");
  
-   String query = "Select * from test_user";
-pst = con.prepareStatement(query);
-rs = pst.executeQuery();
-while(rs.next()){
+      String query = "Select * from test_user";
+      pst = con.prepareStatement(query);
+      rs = pst.executeQuery();
+      while(rs.next()){
 %>
 						 
 						<tr>
