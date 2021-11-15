@@ -76,13 +76,35 @@
             <ul class="sidebar-menu">
               <li class="treeview">
                 <a href="#">
-                <i class="fa fa-users"></i>
+                <i class="fa fa-user"></i>
                 <span>Users</span>
                 <i class="fa fa-angle-down pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
                   <li><a href="newuser.jsp"><i class="fa fa-angle-right"></i>New User</a></li>
                   <li><a href="users.jsp"><i class="fa fa-angle-right"></i>Users</a></li>
+                </ul>
+              </li>
+              <li class="treeview">
+                <a href="#">
+                <i class="fa fa-male"></i>
+                <span>Children</span>
+                <i class="fa fa-angle-down pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                  <li><a href="newchild.jsp"><i class="fa fa-angle-right"></i>New Child</a></li>
+                  <li><a href="children.jsp"><i class="fa fa-angle-right"></i>Children</a></li>
+                </ul>
+              </li>
+              <li class="treeview">
+                <a href="#">
+                <i class="fa fa-users"></i>
+                <span>Couples</span>
+                <i class="fa fa-angle-down pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                  <li><a href="newcouple.jsp"><i class="fa fa-angle-right"></i>New Couple</a></li>
+                  <li><a href="couples.jsp"><i class="fa fa-angle-right"></i>Couples</a></li>
                 </ul>
               </li>
               <li class="header">OTHERS</li>

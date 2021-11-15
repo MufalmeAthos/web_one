@@ -61,7 +61,8 @@
                                                         <td><%= rs.getString("name")%></td>
 							<td><%= rs.getString("email")%></td>
 							<td><a class="btn btn-dark" href="edituser.jsp?id=<%= rs.getString("index_user")%>"><i class="fa fa-edit"></i></a>
-                                                        <a class="btn btn-danger" href="deleteuser.jsp?id=<%= rs.getString("index_user")%>"><i class="fa fa-remove"></i></a></td>
+                                                        <!--<a class="btn btn-danger" href="deleteuser.jsp?id=<%= rs.getString("index_user")%>"><i class="fa fa-remove"></i></a>-->
+                                                        </td>
 						</tr> 
 <%
        }
