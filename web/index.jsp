@@ -24,7 +24,7 @@
     <meta name="author" content="Athanase Bahizire">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
-    <title>Sign In   | MERRUshop</title>
+    <title>Merru  | MERRUshop</title>
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <!-- Custom CSS -->
