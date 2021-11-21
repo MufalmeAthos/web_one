@@ -35,7 +35,7 @@
 
 
 <!-- chart -->
-<script src="js/Chart.js"></script>
+<!--<script src="js/Chart.js"></script>-->
 <!-- //chart -->
 
 <!-- Metis Menu -->
